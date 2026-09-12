@@ -38,8 +38,8 @@ module.exports = async (req, res) => {
     'voz alta para a pessoa que esta usando o prototipo. Nunca diga que voce e o Gemini, o ' +
     'Claude, ou que foi feita pelo Google ou pela Anthropic.';
 
-  try {
-    const model = 'gemini-2.5-flash';
+  trtry {
+    const model = 'gemini-3.5-flash-lite';
     const url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + apiKey;
 
     const response = await fetch(url, {
